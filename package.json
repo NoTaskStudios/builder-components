@@ -1,0 +1,31 @@
+{
+  "name": "@notask/builder-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:changed": "lerna run build --since origin/master --stream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoTaskStudios/builder-components"
+  },
+  "keywords": [],
+  "author": "NoTask Studios LTD.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoTaskStudios/builder-components/issues"
+  },
+  "homepage": "https://github.com/NoTaskStudios/builder-components#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^8.2.1"
+  },
+  "packageManager": "npm@11.2.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

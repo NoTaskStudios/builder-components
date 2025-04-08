@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "npmClient": "npm",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master",
+        "main"
+      ],
+      "message": "chore(release): publish new version",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "bump": "patch"
+    },
+    "publish": {
+      "ignoreChanges": [
+        "**/test/**",
+        "**/*.md"
+      ]
+    },
+    "bootstrap": {
+      "hoist": "true"
+    }
+  }
+}

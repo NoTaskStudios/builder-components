@@ -1,0 +1,12 @@
+# Ignore build outputs
+dist/
+build/
+coverage/
+
+# Ignore test/story files
+*.stories.*
+*.test.*
+*.spec.*
+
+# Ignore local storybook config
+.storybook/
