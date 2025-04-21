@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+    allow:
+      - dependency-type: "direct"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "fix(deps)"
+      include: "scope"
+    reviewers:
+      - MtMath
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+    open-pull-requests-limit: 5
+    reviewers:
+      - MtMath
